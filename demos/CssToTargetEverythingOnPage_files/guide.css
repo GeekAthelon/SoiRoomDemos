@@ -1,0 +1,176 @@
+/* Give the background a pattern, and set it up to repeat */
+
+body {
+    background-image: url(seamless-stone-background.jpg);
+    background-repeat: repeat;
+}
+/* The Chatbox can be targeted with this selector:
+		table[border="3"]
+	Assuming that you don't have any triples that use
+	a border of 3.
+*/
+/* Give the chatbox a gray background that is 1/2 see-through
+and let the background image show through.  Other colors and
+tints could be used here. */
+
+table[border="3"] {
+    background-color: rgba(128, 128, 128, 0.5);
+    box-shadow: 10px 5px 5px black;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 3em;
+}
+
+/* Give the various inputs a tint as well, but make them mostly
+see-through.  This lets them work with the background image nicer
+*/
+table[border="3"] input,
+table[border="3"] select,
+table[border="3"] select option,
+table[border="3"] textarea {
+    background-color: rgba(255, 255, 128, 0.25);
+}
+table[border="3"] input[type=submit] {
+    border-radius: 25px;
+}
+/* Now that we've changed the background color, lets change the color
+of the text */
+
+table[border="3"] {
+    color: brown;
+}
+/* Now that we've changed the background color, lets change the color
+of the links so they are easier to see */
+
+table[border="3"] a {
+    color: white;
+}
+/* This selects the side of the box that has the
+		 find button.  We are just putting a border around it
+		 to show that we have properly found it.
+		 */
+
+table[border="3"] td:first-child {
+    border: 2px dashed green;
+}
+/* This selects the side of the box that has the text 
+		area on it.  By setting this to 100% we are letting it take up the
+		rest of the page.
+		*/
+
+table[border="3"] td:nth-child(2) {
+    border: 2px dotted red;
+    width: 100%;
+}
+/* Since we have the box bigger, lets make the text area
+		bigger.  No reason to limit it to something so small on modern
+		displays. */
+
+table[border="3"] td:nth-child(2) textarea {
+    width: 90%;
+    height: 100%;
+}
+/* This will color the actual posts themselves */
+b + table[border="0"],
+b + blockquote,
+center table[border="5"][width="95%"][cellpadding="5"] {
+    padding: 0;
+    width: 90%;
+    background-color: rgba(128, 128, 128, 0.5);
+	color: yellow;
+    /* Center it */
+    margin: auto;
+	margin-bottom: 1em;
+	margin-top: 0.25em;
+    box-shadow: 10px 5px 5px black;
+}
+
+/* Color the time/date stamp */
+hr + i
+ {
+    padding-left: 1.5em;
+}
+
+/* this section puts in a box around the time date stamp
+   and the <blah> said to <blah> box, without us having to
+   put in actual markup of our own.
+*/
+hr + i:before,
+center table[border="5"][width="95%"][cellpadding="5"] td > i:first-child:before {
+	content: " ";
+	z-index: -1;
+	position: absolute;
+	margin-left: -0.5em;
+    background-color: rgba(255, 255, 128, 0.25);
+    box-shadow: 3px 2px 2px black;
+	width: 25em;
+	height: 2.5em;
+	display:inline-block;
+}
+
+
+/* This selector finds the "blah said to blah" line */
+hr + i + a + br + b {
+    padding-left: 1.5em;
+}
+
+/* this is the horizonal line that separates posts.
+   bury the normal one, we don't need it */
+hr {
+    display: none;
+}
+
+
+/* this is the horizonal line that shows the 
+   old messages.  We'll show this one.*/
+hr[size="10"] {
+    display: block;
+    border: 0;
+    /* Firefox... */
+    height: 0;
+    
+    box-shadow: 0 0 25px 4px black;
+}
+hr[size="10"]:after {
+    /* Not really supposed to work, but does */
+    /* Prevent margin collapse */    
+    content: "\00a0";
+}
+
+center table[border="5"][width="95%"][cellpadding="5"] {
+    background-color: rgba(0, 255, 128, 0.25);
+	color: black;
+	border: none;
+}
+
+center table[border="5"][width="95%"][cellpadding="5"] blockquote {
+	width: 100%;
+	height: 100%;
+	padding: none;
+    box-shadow: none;
+	background-color: transparent;
+	color: black;
+}
+/*
+<center>
+<table border="5" width="95%" cellpadding="5">
+			<tbody>
+				<tr>
+					<td>
+						<i>Thu Oct 27 15:49:40</i>
+						<a href="#">~</a>
+						<br>
+						<b>
+							<font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i></font>]=-</font> <i>whispered to</i> <i><font size="3"><font color="#87ceeb">D</font><font color="#75b1ca">e</font><font color="#6194a9">o</font><font color="#4e7687">r</font><font color="#3a5965">i</font><font color="#273b43">s</font><font color="#131e22"> </font><font color="#000000">S</font><font color="#080d1c">t</font><font color="#111b39">a</font><font color="#192855">r</font><font color="#213571">s</font><font color="#29428d">t</font><font color="#3250aa">o</font><font color="#3a5dc6">r</font><font color="#4169e1">m</font></font> </i><font color="black"><sup>@bwr</sup></font>
+							:
+						</b>
+						<blockquote>
+							thank you for checking in ;) <p>*smiles*
+							</p>
+						</blockquote>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		</center>
+		*/

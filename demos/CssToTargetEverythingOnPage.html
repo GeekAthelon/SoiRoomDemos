@@ -1,0 +1,663 @@
+
+<!-- saved from url=(0049)https://soiroom.hyperchat.com/testdice/index.html -->
+<html><!-- HTML 4 --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>SOI Styling Cookbook</title>
+	<script src="./CssToTargetEverythingOnPage_files/guide.js"></script>
+	<link href="./CssToTargetEverythingOnPage_files/guide.css" rel="stylesheet" type="text/css">
+	<style>
+	</style>
+	
+<style id="204ed7a3-9348-4dc2-be1c-b5137d8d4dd7">div.hchat {
+margin: 0 auto 0 auto;
+border-bottom: 1px solid #000000; margin-bottom: 5px;
+font-size: small; background-color: #000000;
+color: #ffffff;
+}
+.popupdiv {
+position: absolute;
+width: auto;
+padding: 5px;
+background: #ffc;
+border-style:ridge;
+color: #000;
+z-index: 1000;
+}
+.popupdiv a {color: green; text-decoration: none;}
+div.hchat a {
+color: white;
+text-decoration: none;
+}
+a.subtle { border: 1px dotted; font-size:.5em }
+div.hchat p {
+margin: 2px 0 1px 0;
+}
+.cssbutton {
+ background: #fff;
+ padding: 1px;
+ font-size: small;
+ font-variant : small-caps;
+ border : 1px solid #aaa;
+ text-align: center;
+ cursor: pointer;
+}
+.cssbutton .buttonleft {
+ color: #f8f8f8;
+ background: #a42;
+ padding: 0px 3px 0px 3px;
+ text-align: center;
+}
+.cssbutton .buttonright {
+ color: #f8f8f8;
+ background: #886;
+ padding: 0px 2px 0px 3px;
+ text-align: center;
+}
+.cpbutton {
+ text-align: center;
+ opacity: 0.5;
+ font-variant : small-caps;
+}
+.fullButton {
+ display:block;
+ width: 100%;
+}
+table.hotTable {border: 5px ridge; width: 80%;}
+table.hotTable tr {border: 2px ridge; width: 100%;}
+table.hotTable td.left {border: 2px ridge; width: 20%;}
+table.hotTable td.right {border: 2px ridge; width: 80%;}
+#centerdiv {
+ width: 80% ;
+ margin-left: auto ;
+ margin-right: auto ;
+ color: white;
+ background: black;
+}
+fieldset.hchat_mail {
+ background-image:url('https://soiroom.hyperchat.com/chatplus/BG-Puzzle.gif');
+ color: black;
+}
+.chatplus_replace {
+ background: black;
+ color: yellow;
+}
+.chatplus_cork_count {
+ font-size: small;
+ text-decoration:none !important;
+}
+.chatplus_cork_highlight {
+}
+.popup2 {
+ position: absolute;
+ background-color: gray;
+ color: yellow;
+ border: 1px solid white;
+}
+.chatPlus_nick {
+ cursor: pointer;
+ display: inline-block;
+}
+a { text-decoration:underline !important;}
+A:HOVER { cursor: pointer !important; }
+.controlPanel, .controlPanel form, .controlPanel td {
+ color: blue !important;
+}
+.controlPanel input {
+ color: yellow !important;
+ background-color: blue !important;
+}
+.onlineBuddy {
+}
+.cp-underline-bar {
+ border-bottom: 1px solid Scrollbar;
+}
+.cp-popup-visible,
+.cp-popup-hidden {
+overflow: hidden;
+ /* This container should not have padding, borders, etc. */
+}
+.cp-popup-hidden .cpbutton, 
+.cp-popup-visible .cpbutton {
+ display:block;
+ width: 100%;
+ margin-top: 0.5em;
+ background-color: ButtonFace;
+ color: ButtonText;
+}
+.cp-popup-visible {
+ visibility: visible;
+ opacity: 1;
+ transition: opacity 0.25s linear;
+}
+.cp-popup-hidden {
+ visibility: hidden;
+ opacity: 0;
+ transition: visibility 0s 0.25s, opacity 0.25s linear;
+}
+.cp-popup-visible > div,
+.cp-popup-hidden > div {
+ background-color: Window;
+ color: WindowText;
+ /* Put any padding, border, min-height, etc. here. */
+}
+.cp-popup-visible a:link, .cp-popup-visible a:visited, .cp-popup-visible a:hover, .cp-popup-visible a:active { color:WindowText; } 
+.cp-popup-nickname-menu {
+ border: 1px solid WindowFrame;
+ padding: 0.5em;
+}
+.cp-popup-hidden > div {
+ margin-top: -10000px;
+ transition: margin-top 0s 0.5s;
+}
+.modalDialog {
+ position: fixed;
+ font-family: Arial, Helvetica, sans-serif;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background: rgba(0,0,0,0.8);
+ z-index: 99999;
+ opacity:0;
+ -webkit-transition: opacity 400ms ease-in;
+ -moz-transition: opacity 400ms ease-in;
+ transition: opacity 400ms ease-in;
+ pointer-events: none; 
+}
+.modalDialog:target {
+ opacity:1;
+ pointer-events: auto;
+}
+.modalDialog > div {
+ width: 400px;
+ position: relative;
+ margin: 10% auto;
+ padding: 5px 20px 13px 20px;
+ border-radius: 10px;
+ background: #fff;
+ background: -moz-linear-gradient(#fff, #999);
+ background: -webkit-linear-gradient(#fff, #999);
+ background: -o-linear-gradient(#fff, #999);
+ color: #000;
+}
+.modalDialogClose {
+ background: #606061;
+ color: #FFFFFF;
+ line-height: 25px;
+ position: absolute;
+ right: -12px;
+ text-align: center;
+ top: -10px;
+ width: 24px;
+ text-decoration: none;
+ font-weight: bold;
+ -webkit-border-radius: 12px;
+ -moz-border-radius: 12px;
+ border-radius: 12px;
+ -moz-box-shadow: 1px 1px 3px #000;
+ -webkit-box-shadow: 1px 1px 3px #000;
+ box-shadow: 1px 1px 3px #000;
+}
+.cp-corkago {
+ border: 1px dotted white;
+ display: inline-block;
+ font-size: small;
+ width: 8em;
+}
+.modalDialogClose { background: #00d9ff; }
+.cp-candystripe tr:nth-child(odd) {
+ background-color:rgba(0, 0, 0, .1)
+}
+#cp-preview-div {
+ border: 1px solid white;
+ outline: 1px solid black;
+ width: 100%;
+ min-height: 6em;
+ text-align: left;
+}
+#chatplus-previewToggle {
+ display: block;
+}</style></head>
+
+<body><div id="hchat_toolbar" class="hchat"><span style="text-align: left; width: 70%;"><span class="cssbutton chatPlus_popupok chatPlus_popupok"><span class="buttonright">ChatPlus Controls</span></span><span> (Version: 6.27 (build 977))</span>[<a href="https://soiroom.hyperchat.com/testdice/somf.exe?vqvcook=1&amp;vqxsq=xg419ffh2jg580ff2bag580feaf8&amp;uniquepostguid=ca11467-5017-19b0-25d669c73b392bbe-athelon&amp;vqvbs=wvIOzvvNxxzKyvDNwzxNxKzQzIMyOOxKwEzKvQvOxKwNxIEGOKMKOKEKQ&amp;vqxus=athelon%40soi&amp;vqxha=athelon&amp;roomsite=soi&amp;vqxfi=chatplus%40soi&amp;vqxti=1477443786#newtalk">#r-chatplus@soi</a>] for latest news and comments<span class="cssbutton" id="logButton"><span class="buttonright">Show Log</span></span></span></div>
+    <a name="newtalk"></a>
+    <a name="top"></a>
+    <h1>The SOI Styling Cookbook</h1>
+
+	<ul>
+		<li>The ChatBox is styled differently from the rest of the room
+		</li><li>The right and left and sides of the chat box styled differently yet
+		</li><li>The text entry box is now larger and uses nearly the whole screen
+		</li><li>The messages are styled differently
+		</li><li>The horizontal line between most messages is gone
+		</li><li>The horizontal line marking OLD messages has been updated
+		</li><li>Drop shadows, just for the looks
+		</li><li>Rounded buttons, just for looks
+	</li></ul>
+	
+    <a name="chatmark"></a><a href="https://soiroom.hyperchat.com/testdice/index.html#"><font size="2"><i><b>SOI Styling Cookbook</b></i></font></a>
+    <table border="3">
+        <tbody><tr>
+            <td>
+                <center>
+                    <form action="https://soiroom.hyperchat.com/testdice/somf.exe#newtalk" method="POST">
+                        <input type="hidden" name="vqvcook" value="1">
+                        <input type="hidden" name="vqxsq" value="xg419ffh2jg580ff2bag580feaf8">
+                        <input type="hidden" name="uniquepostguid" value="ca11467-5017-19b0-25d669c73b392bbe-athelon">
+                        <input type="hidden" name="vqvbs" value="wvIOzvvNxxzKyvDNwzxNxKzQzIMyOOxKwEzKvQvOxKwNxIEGOKMKOKEKQ">
+                        <input type="hidden" name="vqxus" value="athelon@soi">
+                        <input type="hidden" name="vqxha" value="athelon">
+                        <input type="hidden" name="roomsite" value="soi">
+                        <input type="text" name="vqxfi" size="8">
+                        <input type="hidden" name="vqxti" value="1477443786">
+                        <br>
+                        <input type="submit" name="vqvak" value="Find">
+                        <br>
+                        <div id="chatleft"></div>
+                        <div id="roomlist"></div>
+                        <br>
+                    </form>[18:03]</center>
+            </td>
+            <td>
+                <center>
+                    <form action="https://soiroom.hyperchat.com/testdice/somf.exe#chatmark" method="POST">
+                        <input type="hidden" name="vqvcook" value="1">
+                        <input type="hidden" name="vqxsq" value="nvmujmpdg419ffh2jg580ff2bag580feaf8">
+                        <input type="hidden" name="uniquepostguid" value="ca11467-5017-19b0-25d669c73b392bbe-athelon">
+                        <input type="hidden" name="vqvbs" value="wvIOzvvNxxzKyvDNwzxNxKzQzIMyOOxKwEzKvQvOxKwNxIEGOKMKOKEKQ">
+                        <input type="hidden" name="vqxus" value="athelon@soi">
+                        <input type="hidden" name="vqxro" value="multiloc@soi">
+                        <input type="hidden" name="vqvba" value="1477439466"> [
+                        <a href="https://soiroom.hyperchat.com/testdice/index.html#">z2cork</a>|<a href="https://soiroom.hyperchat.com/testdice/index.html#">multiloc@soi</a>|<a href="https://soiroom.hyperchat.com/testdice/index.html#">ooccork@bwr</a>|<a href="https://soiroom.hyperchat.com/testdice/index.html#">chatplus</a>|<a href="https://soiroom.hyperchat.com/testdice/index.html#">dice@soi</a>|<a href="https://soiroom.hyperchat.com/testdice/index.html#">jsgames</a>|<a href="https://soiroom.hyperchat.com/testdice/index.html#">sshh</a>]
+                        <br>[<a href="https://soiroom.hyperchat.com/testdice/index.html#">Mail</a>|<a href="https://soiroom.hyperchat.com/testdice/index.html#">Controls</a>||<a href="https://soiroom.hyperchat.com/testdice/index.html#">SeeAll</a>|<a href="https://soiroom.hyperchat.com/testdice/index.html#">Hot</a>|<a href="https://soiroom.hyperchat.com/testdice/index.html#">Help</a>|<a href="https://soiroom.hyperchat.com/testdice/index.html#">Old</a>|<a href="https://soiroom.hyperchat.com/testdice/index.html#">Travel</a>|<a href="https://soiroom.hyperchat.com/testdice/index.html#">Local_Controls</a>]
+                        <br> From::
+                        <input type="text" name="vqxha" size="11" value="athelon"> To:
+                        <input type="text" name="vqxto" size="11" value="">
+                        <select name="vqvdy">
+                            <option>&lt;==</option>
+                            <option>**The Room**</option>
+                        </select>Show:
+                        <input type="text" name="vqxby" size="3" value="20">
+                        <br>
+                        <textarea spellcheck="" name="vqxsp" rows="4" cols="55" wrap="VIRTUAL"></textarea>
+                        <br>
+                        <input type="submit" name="vqvaj" value="Talk/Listen"> . .
+                        <input type="checkbox" name="vqvcg"> . . <a href="https://soiroom.hyperchat.com/testdice/index.html#" style="display: none;">[Undo]</a> <input type="button" value="Undo" class="cpbutton" id="chatplus-undo">[<input type="button" value="auto2" class="cpbutton" id="chatplus-auto2"><a href="https://soiroom.hyperchat.com/testdice/index.html#">Auto</a>|<input type="button" value="Special ..." class="cpbutton chatPlus_popupok" id="chatplus-special"> <a href="https://soiroom.hyperchat.com/testdice/index.html#">Old</a>] <input type="button" value="Turn preview mode on" class="cpbutton" id="chatplus-previewToggle" data-cp-preview-mode="false"></form></center><div id="cp-preview-holder"></div></td>
+        </tr>
+    </tbody></table>
+    <input type="hidden" name="vqvas" value="q69966s9a8d4khwzywz2gj2hnfwzdvm1m">
+    <input type="hidden" name="vqxti" value="1477443786">
+    
+    <div id="underchat"></div>
+	
+	<center>
+		<table border="5" width="95%" cellpadding="5">
+			<tbody>
+				<tr>
+					<td>
+						<i>Thu Oct 27 15:49:40</i>
+						<a href="https://soiroom.hyperchat.com/testdice/index.html#">~</a>
+						<br>
+						<b>
+							<font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i></font>]=-</font> <i>whispered to</i> <i><font size="3"><font color="#87ceeb">D</font><font color="#75b1ca">e</font><font color="#6194a9">o</font><font color="#4e7687">r</font><font color="#3a5965">i</font><font color="#273b43">s</font><font color="#131e22"> </font><font color="#000000">S</font><font color="#080d1c">t</font><font color="#111b39">a</font><font color="#192855">r</font><font color="#213571">s</font><font color="#29428d">t</font><font color="#3250aa">o</font><font color="#3a5dc6">r</font><font color="#4169e1">m</font></font> </i><font color="black"><sup>@bwr</sup></font>
+							:
+						</b>
+						<blockquote>
+							thank you for checking in ;) <p>*smiles*
+							</p>
+						</blockquote>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+	
+    <hr><i>Tue Oct 25 17:51:06</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">~</a>
+    <br><b><span title="-=[Athelon]=- [Click for Options]" class="chatPlus_nick" data-nick="athelon@soi"><font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i></font>]=-</font> </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <table border="0">
+        <tbody><tr>
+            <td width="120" valign="top"><img align="left" width="90" height="131" src="./CssToTargetEverythingOnPage_files/barcode.png">
+            </td>
+            <td width="20">&nbsp;</td>
+            <td valign="top"><font color="red" bgcolor="green" size="-2">The boring default</font>
+                <br>Test post </td>
+        </tr>
+    </tbody></table>
+    <br clear="all">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <hr><i>Mon Oct 03 11:01:34</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+    <br><b><span title="visitor [Click for Options]" class="chatPlus_nick" data-nick="visitor@soi">visitor </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <blockquote> <font color="red" bgcolor="green" size="-2">The boring default</font>
+        <br>Interesting ... there are now Unicode Dice.
+        <p>I can use this... somehow. 
+            
+            
+            
+            
+    </p></blockquote>
+    <hr><i>Mon Oct 03 10:57:52</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+    <br><b><span title="Visitor [Click for Options]" class="chatPlus_nick" data-nick="visitor@soi">Visitor </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <blockquote> <font color="red" bgcolor="green" size="-2">The boring default</font>
+        <br>&#9858; 
+        
+        
+        
+        
+    </blockquote>
+    <hr size="10"><i>Thu Dec 10 19:27:26</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">~</a>
+    <br><b><span title="Linda Friitawa@jag [Click for Options]" class="chatPlus_nick" data-nick="lindafriitawa@jag">Linda Friitawa<sup>@jag</sup> </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <table border="0">
+        <tbody><tr>
+            <td width="120" valign="top"><img align="left" width="120" height="150" src="./CssToTargetEverythingOnPage_files/fri.jpg">
+            </td>
+            <td width="20">&nbsp;</td>
+            <td valign="top"><font color="red" bgcolor="green" size="-2">The boring default</font>
+                <br>I need help making a room with Multiloc I need it for the rp in SOI tho help me please </td>
+        </tr>
+    </tbody></table>
+    <br clear="all">
+    
+    
+    
+    
+    
+    
+    <hr><i>Sat Apr 18 22:48:31</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+    <br><b><span title="visitor [Click for Options]" class="chatPlus_nick" data-nick="visitor@soi">visitor </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <blockquote> <font color="red" bgcolor="green" size="-2">The boring default</font>
+        <br>And another test
+        
+        
+        
+        
+    </blockquote>
+    <hr><i>Sat Apr 18 21:26:12</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+    <br><b><span title="athelon2 [Click for Options]" class="chatPlus_nick" data-nick="athelon2@soi">athelon2 </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <blockquote> <font color="red" bgcolor="green" size="-2">The boring default</font>
+        <br>Testing voice
+        
+        
+        
+        
+    </blockquote>
+    <hr><i>Sat Apr 18 16:33:32</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">~</a>
+    <br><b><span title="-=[Athelon]=- [Click for Options]" class="chatPlus_nick" data-nick="athelon@soi"><font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i></font>]=-</font> </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <table border="0">
+        <tbody><tr>
+            <td width="120" valign="top"><img align="left" width="120" height="150" src="./CssToTargetEverythingOnPage_files/athelon_120_150.gif">
+            </td>
+            <td width="20">&nbsp;</td>
+            <td valign="top"><font color="red" bgcolor="green" size="-2">The boring default</font>
+                <br>Makes a test post</td>
+        </tr>
+    </tbody></table>
+    <br clear="all">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <hr><i>Thu Apr 10 10:29:31</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+    <br><b><span title="Athelon2 [Click for Options]" class="chatPlus_nick" data-nick="athelon2@soi">Athelon2 </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <blockquote> <font color="red" bgcolor="green" size="-2">The server corner</font>
+        <br>Test3
+        
+        
+        
+        
+    </blockquote>
+    <hr><i>Thu Apr 10 10:29:23</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+    <br><b><span title="Athelon2 [Click for Options]" class="chatPlus_nick" data-nick="athelon2@soi">Athelon2 </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <blockquote> <font color="red" bgcolor="green" size="-2">The server corner</font>
+        <br>teseting
+        
+        
+        
+        
+    </blockquote>
+    <hr><i>Thu Apr 10 10:29:08</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+    <br><b><span title="Athelon2 [Click for Options]" class="chatPlus_nick" data-nick="athelon2@soi">Athelon2 </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <blockquote> <font color="red" bgcolor="green" size="-2">The boring default</font>
+        <br>testing
+        
+        
+        
+        
+    </blockquote>
+    <hr><i>Thu Apr 10 10:03:46</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">~</a>
+    <br><b><span title="sasha james [Click for Options]" class="chatPlus_nick" data-nick="sashajames@soi"><font color="red"> sasha james</font> </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <table border="0">
+        <tbody><tr>
+            <td width="120" valign="top"><img align="left" width="120" height="150" src="./CssToTargetEverythingOnPage_files/sj16.jpg">
+            </td>
+            <td width="20">&nbsp;</td>
+            <td valign="top"><font color="red" bgcolor="green" size="-2">The boring default</font>
+                <br>yes... from <b><font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i></font>]=-</font>'s</b> digs... which I could see.. upon posting the "just cheking" note I was flipped back to "The boring default"
+                <p>running Chrome...any ideas?</p></td>
+        </tr>
+    </tbody></table>
+    <br clear="all">
+    
+    
+    
+    
+    
+    
+    <hr><i>Thu Apr 10 10:02:55</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">~</a>
+    <br><b><span title="sasha james [Click for Options]" class="chatPlus_nick" data-nick="sashajames@soi"><font color="red"> sasha james</font> </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <table border="0">
+        <tbody><tr>
+            <td width="120" valign="top"><img align="left" width="120" height="150" src="./CssToTargetEverythingOnPage_files/sj16.jpg">
+            </td>
+            <td width="20">&nbsp;</td>
+            <td valign="top"><font color="red" bgcolor="green" size="-2"><b><font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i>
+                </font>]=-</font>'s</b> main digs.</font>
+                <br>just checking to see if I get flipped back to main page</td>
+        </tr>
+    </tbody></table>
+    <br clear="all">
+    
+    
+    
+    
+    
+    
+    <hr><i>Thu Mar 06 10:40:12</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">~</a>
+    <br><b><span title="Teddie Carlson [Click for Options]" class="chatPlus_nick" data-nick="teddiecarlson@soi"><font face="PRAYING ANGEL" size="4" color="ff69b4">T<font color="f46cb8">e<font color="e870bd">d<font color="dc73c1">d<font color="d077c6">i<font color="c47aca">e <font color="ac81d3">C<font color="a085d8">a<font color="9488dc">r<font color="888ce1">l<font color="7c8fe5">s<font color="7093ea">o<font color="6495ed">n</font></font></font></font></font></font></font></font></font></font></font></font></font> </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+    <table border="0">
+        <tbody><tr>
+            <td width="120" valign="top"><img align="left" width="120" height="150" src="./CssToTargetEverythingOnPage_files/t15.png">
+            </td>
+            <td width="20">&nbsp;</td>
+            <td valign="top"><font color="red" bgcolor="green" size="-2">The boring default</font>
+                <br><i>Reposting this with a working name: <a href="http://soiuser.hyperchat.com/niftygifty/tutorial.html">Picture tutorial</a></i></td></tr></tbody></table><br clear="all">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <hr><i>Wed Nov 13 22:25:08</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">~</a>
+                <br><b><span title="-=[Athelon]=- [Click for Options]" class="chatPlus_nick" data-nick="athelon@soi"><font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i></font>]=-</font> </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+                <table border="0">
+                    <tbody><tr>
+                        <td width="120" valign="top"><img align="left" width="120" height="150" src="./CssToTargetEverythingOnPage_files/athelon_120_150.gif">
+                        </td>
+                        <td width="20">&nbsp;</td>
+                        <td valign="top"><font color="red" bgcolor="green" size="-2">The boring default</font>
+                            <br>Visitor:
+                            <p>The instructions on how to make one of these rooms is here -- in this room.
+                                </p><p>It just doesn't work with triplets.
+                                    </p><p><a href="http://soiroom.hyperchat.com/multiloc/multihowto.html" z="">http://soiroom.hyperchat.com/multiloc/multihowto.html</a>
+                                        </p><p>And yes, OrcHoard -- MultiLoc requires cookies for whichever server the room room is hosted on. There is no way around that.
+                                            </p><p>(The cookie alternatives, such as sessionStorage, are disabled if cookies are turned off.)</p></td>
+                    </tr>
+                </tbody></table>
+                <br clear="all">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <hr><i>Sun Nov 10 13:37:43</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+                <br><b><span title="OrcHoard [Click for Options]" class="chatPlus_nick" data-nick="orchoard@soi">OrcHoard </span> <i>said to</i> <span title="-=[Athelon]=- [Click for Options]" class="chatPlus_nick" data-nick="athelon@soi"> <font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i></font>]=-</font>:</span></b>
+                <blockquote> <font color="red" bgcolor="green" size="-2">The boring default</font>
+                    <br>Correction:
+                    <p>I need to determine which server @soi/bwr et al that the room lives in and allow that cookie.
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                </p></blockquote>
+                <hr><i>Sun Nov 10 13:17:59</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+                <br><b><span title="OrcHoard [Click for Options]" class="chatPlus_nick" data-nick="orchoard@soi">OrcHoard </span> <i>said</i> <span title=" [Click for Options]" class="chatPlus_nick" data-nick="@soi">:</span></b>
+                <blockquote> <font color="red" bgcolor="green" size="-2"><b><font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i>
+                    </font>]=-</font>'s</b> main digs.</font>
+                    <br>Yeeehawwwwwww says the Hoard!
+                    
+                    
+                    
+                    
+                </blockquote>
+                <hr><i>Sun Nov 10 13:16:25</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+                <br><b><span title="OrcHoard [Click for Options]" class="chatPlus_nick" data-nick="orchoard@soi">OrcHoard </span> <i>said to</i> <span title="-=[Athelon]=- [Click for Options]" class="chatPlus_nick" data-nick="athelon@soi"> <font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i></font>]=-</font>:</span></b>
+                <blockquote> <font color="red" bgcolor="green" size="-2"><b><font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i>
+                    </font>]=-</font>'s</b> main digs.</font>
+                    <br>Blocking all cookies works as long as I allow this:
+                    <p>ssom15.hyperchat.com
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                </p></blockquote>
+                <hr><i>Sun Nov 10 13:16:03</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+                <br><b><span title="OrcHoard [Click for Options]" class="chatPlus_nick" data-nick="orchoard@soi">OrcHoard </span> <i>said to</i> <span title="-=[Athelon]=- [Click for Options]" class="chatPlus_nick" data-nick="athelon@soi"> <font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i></font>]=-</font>:</span></b>
+                <blockquote> <font color="red" bgcolor="green" size="-2"><b><font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i>
+                    </font>]=-</font>'s</b> main digs.</font>
+                    <br>test
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </blockquote>
+                <hr><i>Sun Nov 10 13:14:17</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+                <br><b><span title="OrcHoard [Click for Options]" class="chatPlus_nick" data-nick="orchoard@soi">OrcHoard </span> <i>said to</i> <span title="-=[Athelon]=- [Click for Options]" class="chatPlus_nick" data-nick="athelon@soi"> <font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i></font>]=-</font>:</span></b>
+                <blockquote> <font color="red" bgcolor="green" size="-2"><b><font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i>
+                    </font>]=-</font>'s</b> main digs.</font>
+                    <br>test
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </blockquote>
+                <hr><i>Sun Nov 10 13:13:58</i> <a href="https://soiroom.hyperchat.com/testdice/index.html#">*</a>
+                <br><b><span title="OrcHoard [Click for Options]" class="chatPlus_nick" data-nick="orchoard@soi">OrcHoard </span> <i>said to</i> <span title="-=[Athelon]=- [Click for Options]" class="chatPlus_nick" data-nick="athelon@soi"> <font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i></font>]=-</font>:</span></b>
+                <blockquote> <font color="red" bgcolor="green" size="-2"><b><font color="navy">-=[<font color="silver"><i><font color="white">A</font>thelon</i>
+                    </font>]=-</font>'s</b> main digs.</font>
+                    <br>I have narrowed this down to the blocking of ALL cookies.
+                    <br>If I allow first party cookies and block third party cookies this works. If I block them all it does not. 
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </blockquote>
+                <hr>
+                <center><a href="https://soiroom.hyperchat.com/testdice/index.html#">[Previous 20 thoughts starting with Sun Nov 10 13:13:58 2013
+]</a>
+                </center>
+                <hr>
+                <div id="roombottom"></div>
+
+                <a name="bottom"></a>
+                <center><a href="https://soiroom.hyperchat.com/testdice/index.html#">[Reload This Page]</a>
+                    <br><a href="https://soiroom.hyperchat.com/testdice/index.html#"><font size="2"><i><b>#r-MultiView  &amp; #r-ChatPlus   chat/help ...(multiloc)</b></i></font></a><a href="https://soiroom.hyperchat.com/testdice/index.html#top">[Top]</a><a href="https://soi.hyperchat.com/">[Entrance]</a>
+                </center>
+                <br clear="left">
+                <center><font size="2">(Your Browser is: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36)</font>
+                    <br>
+                    <font size="2">(Performance Fetch Count = 112)(Reference=720,Count=1)</font>
+                    <br><font size="2">(Login Server: Not Required)(Compression: On)</font>
+                    <br><font size="2">(Mail Server: Normal Response(104.239.150.71).)</font>
+                    <br><font size="1">S(0)R(1)N(CHIO)H(ssomf.hyperchat.com)</font>
+                    <br>
+                    <font size="1"><a href="http://www.cyberhelp.net/">Copyright © 1995-2015 Cyber Help, Inc., all rights reserved</a></font>
+                    <br><a href="http://soi.hyperchat.com/chat/perm/rules.htm">[Rules/Conditions of Use]</a>
+                    <br><font size="1">'HyperChat Software' and 'State of Insanity' are registered in the U.S. Pat. Off. </font>
+                    <br>
+                </center>
+
+<!-- compression used: gzip -->
+
+<div><div id="chooseViewModal" class="modalDialog" style="display: none;"><div><a href="https://soiroom.hyperchat.com/testdice/index.html#close" title="Close" class="modalDialogClose">X</a><div id="chooseViewModelViews"></div></div></div></div><div id="istouched"></div></body></html>
